@@ -1,0 +1,12 @@
+class Solution:
+    def isPalindrome(self, x: int) -> int:
+        if x<0:
+            return False
+        return str(x)==str(x)[::-1]
+
+if __name__=="__main__":
+    x=121
+    solution=Solution()
+    k=solution.isPalindrome(x)
+    for i in range(k):
+        print(k)
