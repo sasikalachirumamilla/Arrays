@@ -1,0 +1,14 @@
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        a=[]
+        if needle in haystack:
+            return haystack.index(needle)
+        else:
+            return -1
+
+if __name__=="__main__":
+    haystack="sadbutsad"
+    needle="sad"
+    solution=Solution()
+    k=solution.strStr(haystack,needle)
+    print(k)
